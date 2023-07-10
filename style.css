@@ -1,0 +1,391 @@
+body {
+    background-color: #F5F2F2;
+    width: 100%;
+    overflow-x: hidden;
+}
+
+h4 {
+    font-weight: bold;
+}
+
+.title-header {
+    margin-bottom: 5vh;
+}
+
+#informasi {
+    background-color: #797976;
+    text-align: center;
+    padding: 8px;
+}
+
+#informasi h6 {
+    color: white;
+}
+
+#informasi a:hover {
+    color: white;
+}
+
+/* navbar */
+
+.navbar-nav {
+    margin-left: auto;
+}
+
+.navbar-brand img {
+    width: 180px;
+    height: 40px;
+}
+
+.navbar-nav button{
+    margin-left: 25px;
+    width: 80px;
+    height: 40px;
+    border-radius: 15px;
+}
+
+.nav-link {
+    margin-left: 30px;
+    /* margin-right: 15px; */
+    font-weight: bold;
+}
+
+.navbar-nav a {
+    color: #5498FF;
+    font-size: 18px;
+}
+
+.navbar a:hover{
+    color: #1A8BF3;
+    opacity: 5;
+    text-decoration: underline;
+}
+
+.navbar-nav select{
+    background-color: transparent;
+    border-color: #1A8BF3;
+    border-radius: 15px;
+    height: 40px;
+    width: 120px;
+    margin-left: 150px;
+    margin-right: 25px;
+}
+
+.navbar-nav select:hover {
+    background-color: #1A8BF3;
+    color: white;
+}
+
+option {
+    background-color: white;
+    color: black;
+    border-radius: 15px;
+}
+
+/* Banner */
+
+#banner {
+    background-color: #5498FF;
+    height: 80vh;
+    width: 100%;
+    padding: 20px 80px;
+}
+
+#banner .nav-link {
+    text-align: center;
+}
+
+#banner a {
+    color: white;
+}
+
+#banner .dropdown-menu{
+    border: none;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: inherit;
+    font-size: inherit;
+    cursor: inherit;
+    line-height: inherit;
+}
+
+#banner .dropdown-item {
+    color: black;
+}
+
+#banner .dropdown-item:hover {
+    background-color: #5498FF;
+    color: white;
+}
+
+#banner img {
+    padding: 15px 30px 30px;
+    width: 100%;
+    height: 60vh;
+    border-radius: 50px;
+}
+
+/* End Banner */
+
+#penerbangan .card {
+    width: 80%;
+    height: 45vh;
+    border: none;
+    box-shadow: 0px 8px 16px 0px;
+    margin: -60px auto 50px;
+    border-radius: 25px;
+    z-index: 1;
+    padding: 20px 15px;
+}
+
+#penerbangan .form-check {
+    margin-left: 20px;
+}
+
+#penerbangan .radio-button{
+    margin: 10px 30px;
+}
+
+#penerbangan .radio-button label {
+    margin-right: 50px;
+    cursor: pointer ;
+}
+
+#penerbangan button {
+    margin-right: auto;
+    margin: 10px 0px;
+    width: 10vw;
+}
+
+#penerbangan .change {
+    position: absolute;
+    margin-top: -25px;
+    margin-left: 180px;
+}
+
+#penerbangan select, input {
+    border: none;
+}
+
+
+/* Eksklusif */
+
+#eksklusif {
+    text-align: center;
+    margin-top: 7vh;
+}
+
+#eksklusif p {
+    color: black;
+}
+
+#eksklusif .card {
+    /* background-color: #F5F2F2; */
+    padding: 20px 40px;
+    width: 100%;
+    height: auto;
+    border: none;
+    box-shadow: 0px 8px 16px 0px;
+}
+
+#eksklusif h4 {
+    margin-bottom: 5vh;
+}
+
+#eksklusif img{
+    width: 80px;
+    margin-bottom: 10px;
+}
+
+/* End Eksklusif */
+
+/* Kota */
+
+#kota  {
+    margin-top: 15vh;
+}
+
+#kota a {
+    text-decoration: none;
+}
+
+#kota .card {
+    color: white;
+    width: 40vh;
+    border-radius: 15px;
+    height: 30vh;
+    margin-right: 30px;
+}
+
+#kota img {
+    width: 40vh;
+    border-radius: 15px;
+    height: 30vh;
+}
+
+#kota p, h6 {
+    padding: 8px 8px 0px;
+}
+
+#kota p {
+    font-size: 14px;
+    color: white;
+}
+
+#kota .title {
+    margin-top: -190px;
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+}
+
+#kota .description {
+    margin-top: 130px;
+}
+
+#kota button {
+    width: fit-content;
+    height: fit-content;
+    margin-top: 150px;
+}
+
+/* End Kota */
+
+/* Hiburan */
+
+#hiburan {
+    margin-top: 15vh;
+    width: 100%;
+}
+
+#hiburan a {
+    text-decoration: none;
+}
+
+#hiburan .card {
+    border-radius: 15px;
+    width: 40vh;
+    height: 50vh;
+    border: none;
+    background-color: transparent;
+    margin-right: 30px;
+}
+
+#hiburan img {
+    width: 40vh;
+    border-radius: 15px;
+    height: 30vh;
+}
+
+#hiburan h6 {
+    padding: 8px 16px;
+    color: white;
+    background-color: #1A8BF3;
+}
+
+#hiburan p {
+    margin: 0px;
+}
+
+#hiburan .card-body {
+    margin-left: -10px;
+}
+
+
+/* End Hiburan */
+
+/* Artikel */
+
+#artikel {
+    margin-top: 10vh;
+}
+
+
+#artikel h5 {
+    font-weight: bold;
+}
+
+#artikel p {
+    font-size: 14px;
+    color: black;
+}
+
+#artikel .card {
+    width: 100%;
+    border-radius: 15px;
+    /* background-color: #F5F2F2; */
+    border: none;
+    box-shadow: 0px 8px 16px 0px;
+}
+
+#artikel img {
+    width: 100%;
+    height: auto;
+}
+
+#artikel a {
+    text-decoration: none;
+}
+
+
+/* End Artikel */
+
+/* Footer */
+
+#footer {
+    margin-top: 15vh;
+    background-color: #1A8BF3;
+    padding-top: 3vh;
+}
+
+#footer .img-logo{
+    width: 200px;
+    margin-bottom: 10px;
+}
+
+#footer h5 {
+    color: white;
+}
+
+#footer p {
+    color: white;
+}
+
+#footer a{
+    text-decoration: none;
+    color: white;
+}
+
+#footer a:hover {
+    font-weight: bold;
+}
+
+#footer .img-pembayaran {
+    width: 90%;
+    height: 100%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#footer .card {
+    width: 70px;
+    height: 37px;
+    margin-bottom: 10px;
+    border-radius: 15px;
+}
+
+#footer .tentang-kami {
+    margin-left: 100px;
+}
+
+#footer .bantuan {
+    margin-left: -100px;
+}
+
+#footer .hubungi-kami img {
+    width: 20px;
+    margin-bottom: 8px;
+    margin-right: 5px;
+}
