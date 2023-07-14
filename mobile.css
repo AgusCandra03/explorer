@@ -1,3 +1,431 @@
 @media (max-width: 991.98px) {
+    body {
+        background-color: #F5F2F2;
+        width: 100%;
+        overflow-x: hidden;
+    }
     
+    h4 {
+        font-weight: bold;
+    }
+    
+    .title-header {
+        margin-bottom: 5vh;
+    }
+    
+    #informasi {
+        background-color: #797976;
+        text-align: center;
+        padding: 8px;
+    }
+    
+    #informasi h6 {
+        color: white;
+        font-size: 12px;
+    }
+    
+    #informasi a:hover {
+        color: white;
+    }
+    
+    /* navbar */
+
+    #navbar {
+        padding: 0px 4vw;
+    }
+    
+    .navbar-brand img {
+        width: 20vw;
+        height: 40px;
+    }
+    
+    .navbar-nav button{
+        margin-top: 1vh;
+        width: 80%;
+        height: 40px;
+        border-radius: 15px;
+    }
+    
+    .nav-link {
+        margin-left: 2vw;
+        font-weight: bold;
+    }
+    
+    .navbar-nav a {
+        color: #5498FF;
+    }
+    
+    .navbar a:hover{
+        color: #1A8BF3;
+        opacity: 5;
+        text-decoration: underline;
+    }
+    
+    .navbar-nav select{
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        background-color: transparent;
+        border-color: #1A8BF3;
+        border-radius: 15px;
+        height: 40px;
+        width: 80%;
+    }
+    
+    .navbar-nav select:hover {
+        background-color: #1A8BF3;
+        color: white;
+    }
+    
+    .language option {
+        background-color: white;
+        color: black;
+    }
+    
+    /* Banner */
+    
+    #banner {
+        background-color: #5498FF;
+        height: 70vh;
+        width: 100%;
+        padding: 2vh 10vw;
+    }
+    
+    #banner ul {
+        justify-content: center;
+    }
+    
+    #banner a {
+        color: white;
+    }
+
+    #banner a:hover {
+        text-decoration: underline white;
+    }
+    
+    #banner .dropdown-menu{
+        border: none;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-family: inherit;
+        font-size: inherit;
+        cursor: inherit;
+        line-height: inherit;
+    }
+    
+    #banner .dropdown-item {
+        color: black;
+    }
+    
+    #banner .nav-item {
+        margin-right: 2vw;
+        text-align: center;
+    }
+    
+    #banner .dropdown-item:hover {
+        background-color: #5498FF;
+        color: white;
+    }
+    
+    #banner img {
+        padding-top: 2vh;
+        padding-bottom: 4vh;
+        width: 100%;
+        height: 50vh;
+        border-radius: 30px;
+    }
+    
+    /* End Banner */
+    
+    #penerbangan .card {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+        border: none;
+        box-shadow: 0px 8px 16px 0px;
+        margin: -6vh auto 50px;
+        border-radius: 25px;
+        z-index: 1;
+        padding: 20px 15px;
+    }
+    
+    #penerbangan .form-check {
+        margin-left: 20px;
+    }
+    
+    #penerbangan .radio-button{
+        margin: 10px 30px;
+    }
+    
+    #penerbangan .radio-button label {
+        margin-right: 50px;
+        cursor: pointer ;
+    }
+
+    #penerbangan table {
+        width: fit-content;
+    }
+    
+    #penerbangan button {
+        margin-right: auto;
+        width: 25vw;
+    }
+    
+    #penerbangan select, input {
+        /* border: none; */
+    }
+    
+    /* Eksklusif */
+    
+    #eksklusif {
+        text-align: center;
+        margin-top: 7vh;
+    }
+    
+    #eksklusif p {
+        color: black;
+        font-size: 10px;
+    }
+    
+    #eksklusif .card {
+        padding: 10px 20px;
+        width: 100%;
+        height: auto;
+        border: none;
+        box-shadow: 0px 8px 16px 0px;
+    }
+    
+    #eksklusif h4 {
+        margin-bottom: 5vh;
+    }
+    
+    #eksklusif img{
+        width: 30px;
+        margin-bottom: 10px;
+    }
+
+    #eksklusif .icon {
+        margin-bottom: 2vh;
+    }
+    
+    /* End Eksklusif */
+    
+    /* Kota */
+    
+    #kota  {
+        margin-top: 15vh;
+    }
+    
+    #kota a {
+        text-decoration: none;
+    }
+    
+    #kota .card {
+        margin: 0px 10px;
+        color: white;
+        width: 40vh;
+        border-radius: 15px;
+        height: 30vh;
+    }
+    
+    #kota img {
+        width: 100%;
+        border-radius: 15px;
+        height: 30vh;
+    }
+    
+    #kota p, h6 {
+        padding: 8px 8px 0px;
+    }
+    
+    #kota p {
+        font-size: 10px;
+        color: white;
+    }
+    
+    #kota h5 {
+        margin-top: 50px;
+        font-size: 15px;
+        color: white;
+        font-weight: bold;
+    }
+    
+    #kota .description {
+        margin-top: 90px;
+    }
+    
+    #kota button {
+        width: fit-content;
+        height: fit-content;
+        margin-top: 150px;
+    }
+
+    #kota .title {
+        margin-top: -38vh;
+    }
+    
+    /* End Kota */
+    
+    /* Hiburan */
+    
+    #hiburan {
+        margin-top: 15vh;
+        width: 100%;
+    }
+    
+    #hiburan a {
+        text-decoration: none;
+    }
+    
+    #hiburan .card {
+        margin-left: 2vw;
+        border-radius: 15px;
+        width: 40vh;
+        height: 100%;
+        border: none;
+        background-color: transparent;
+    }
+    
+    #hiburan img {
+        width: 40vh;
+        border-radius: 15px;
+        height: 30vh;
+    }
+    
+    #hiburan h6 {
+        padding: 8px 16px;
+        color: white;
+        background-color: #1A8BF3;
+    }
+    
+    #hiburan p {
+        margin: 0px;
+    }
+    
+    #hiburan .card-body {
+        margin-left: -10px;
+    }
+
+    #hiburan .card-title {
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    #hiburan .card-text{
+        font-size: 14px;
+    }
+    
+    
+    /* End Hiburan */
+    
+    /* Artikel */
+    
+    #artikel {
+        margin-top: 10vh;
+    }
+    
+    
+    #artikel h5 {
+        font-weight: bold;
+    }
+    
+    #artikel p {
+        font-size: 14px;
+        color: black;
+    }
+    
+    #artikel .card {
+        width: 100%;
+        border-radius: 15px;
+        border: none;
+        box-shadow: 0px 8px 16px 0px;
+    }
+    
+    #artikel img {
+        width: 100%;
+        height: 60vh;
+    }
+    
+    #artikel a {
+        text-decoration: none;
+    }
+    
+    
+    /* End Artikel */
+    
+    /* Footer */
+    
+    #footer {
+        margin-top: 15vh;
+        background-color: #1A8BF3;
+        padding-top: 5vh;
+    }
+    
+    #footer .img-logo{
+        width: 200px;
+        margin-bottom: 10px;
+    }
+    
+    #footer h5 {
+        color: white;
+        font-size: 16px;
+    }
+    
+    #footer p {
+        color: white;
+    }
+    
+    #footer a{
+        text-decoration: none;
+        color: white;
+    }
+    
+    #footer a:hover {
+        font-weight: bold;
+    }
+    
+    #footer .img-pembayaran {
+        width: 90%;
+        height: 100%;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    
+    
+    #footer .card {
+        width: 10vw;
+        height: 5vh;
+        margin-bottom: 4vh;
+        margin-right: -5vw;
+        border-radius: 10px;
+    }
+
+    #footer .partner-pembayaran {
+        margin-left: 2vh;
+    }
+    
+    #footer .tentang-kami {
+        margin-left: 10vw;
+    }
+    
+    #footer .bantuan {
+        margin-top: 2vh;
+        margin-left: 2vw;
+    }
+    
+    #footer .hubungi-kami {
+        margin-top: -5vh;
+        margin-left: 10vw;
+    }
+    
+    #footer .hubungi-kami img {
+        width: 20px;
+    }
+
+    #footer .copyright {
+        margin-top: 4vh;
+    }
 }

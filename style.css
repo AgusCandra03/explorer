@@ -29,6 +29,10 @@ h4 {
 /* navbar */
 
 .navbar-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-left: auto;
 }
 
@@ -38,21 +42,19 @@ h4 {
 }
 
 .navbar-nav button{
-    margin-left: 25px;
+    margin-left: 1vw;
     width: 80px;
     height: 40px;
     border-radius: 15px;
 }
 
 .nav-link {
-    margin-left: 30px;
-    /* margin-right: 15px; */
+    margin-left: 2vw;
     font-weight: bold;
 }
 
 .navbar-nav a {
     color: #5498FF;
-    font-size: 18px;
 }
 
 .navbar a:hover{
@@ -76,10 +78,9 @@ h4 {
     color: white;
 }
 
-option {
+.language option {
     background-color: white;
     color: black;
-    border-radius: 15px;
 }
 
 /* Banner */
@@ -92,11 +93,21 @@ option {
 }
 
 #banner .nav-link {
+    display: block;
+    text-align: center;
+    align-items: center;
+}
+
+#banner .nav {
     text-align: center;
 }
 
 #banner a {
     color: white;
+}
+
+#banner a:hover {
+    text-decoration: underline white;
 }
 
 #banner .dropdown-menu{
@@ -114,13 +125,19 @@ option {
     color: black;
 }
 
+#banner .nav-item {
+    margin-right: 2vw;
+    text-align: center;
+}
+
 #banner .dropdown-item:hover {
     background-color: #5498FF;
     color: white;
 }
 
 #banner img {
-    padding: 15px 30px 30px;
+    padding-top: 2vh;
+    padding-bottom: 4vh;
     width: 100%;
     height: 60vh;
     border-radius: 50px;
@@ -130,10 +147,10 @@ option {
 
 #penerbangan .card {
     width: 80%;
-    height: 45vh;
+    height: 100%;
     border: none;
     box-shadow: 0px 8px 16px 0px;
-    margin: -60px auto 50px;
+    margin: -6vh auto 50px;
     border-radius: 25px;
     z-index: 1;
     padding: 20px 15px;
@@ -144,13 +161,14 @@ option {
 }
 
 #penerbangan .radio-button{
-    margin: 10px 30px;
+    margin: 10px 30px 20px;
 }
 
 #penerbangan .radio-button label {
     margin-right: 50px;
     cursor: pointer ;
 }
+
 
 #penerbangan button {
     margin-right: auto;
@@ -159,13 +177,13 @@ option {
 }
 
 #penerbangan .change {
-    position: absolute;
+    /* position: absolute;
     margin-top: -25px;
-    margin-left: 180px;
+    margin-left: 180px; */
 }
 
 #penerbangan select, input {
-    border: none;
+    /* border: none; */
 }
 
 
@@ -229,19 +247,19 @@ option {
 }
 
 #kota p {
-    font-size: 14px;
+    font-size: 12px;
     color: white;
 }
 
 #kota .title {
-    margin-top: -190px;
+    margin-top: -170px;
     margin-left: 10px;
     color: white;
     font-weight: bold;
 }
 
 #kota .description {
-    margin-top: 130px;
+    margin-top: 110px;
 }
 
 #kota button {
@@ -249,6 +267,7 @@ option {
     height: fit-content;
     margin-top: 150px;
 }
+
 
 /* End Kota */
 
@@ -304,6 +323,7 @@ option {
 
 #artikel h5 {
     font-weight: bold;
+    margin-bottom: 20px;
 }
 
 #artikel p {
@@ -314,14 +334,13 @@ option {
 #artikel .card {
     width: 100%;
     border-radius: 15px;
-    /* background-color: #F5F2F2; */
     border: none;
     box-shadow: 0px 8px 16px 0px;
 }
 
 #artikel img {
     width: 100%;
-    height: auto;
+    height: 100%;
 }
 
 #artikel a {
@@ -336,7 +355,7 @@ option {
 #footer {
     margin-top: 15vh;
     background-color: #1A8BF3;
-    padding-top: 3vh;
+    padding-top: 5vh;
 }
 
 #footer .img-logo{
@@ -370,18 +389,23 @@ option {
 }
 
 #footer .card {
-    width: 70px;
-    height: 37px;
-    margin-bottom: 10px;
+    width: 5vw;
+    height: 5vh;
+    margin-bottom: 1vh;
     border-radius: 15px;
 }
 
 #footer .tentang-kami {
-    margin-left: 100px;
+    margin-left: 4vw;
+    margin-right: 2vw;
 }
 
 #footer .bantuan {
     margin-left: -100px;
+}
+
+#footer .hubungi-kami {
+    margin-left: 10px;
 }
 
 #footer .hubungi-kami img {

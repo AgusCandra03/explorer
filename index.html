@@ -33,28 +33,33 @@
         </div>
     </section>
 
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            <img src="./asset/explorer.png" alt="Logo Explorer">
-          </a>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a class="nav-link" href="#">Jadi Partner Kami</a>
-              <a class="nav-link" href="#">Daftarkan Event</a>
-              <select class="form-select" aria-label="Default select example">
-                <option value="1">Indonesia</option>
-                <option value="2">English</option>
-              </select>
-              <button type="button" class="btn btn-primary form-control">Login</button>
-              <button type="button" class="btn btn-outline-primary form-control col-lg-2">Register</button>
+    <section id="navbar">
+      <div class="row">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+          <div class="container">
+            <a class="navbar-brand" href="#">
+              <img src="./asset/explorer.png" alt="Logo Explorer">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-link" href="#">Jadi Partner Kami</a>
+                <a class="nav-link" href="#">Daftarkan Event</a>
+                <select class="language form-select" aria-label="Default select example">
+                  <option value="1">Indonesia</option>
+                  <option value="2">English</option>
+                </select>
+                <button type="button" class="btn btn-primary form-control">Login</button>
+                <button type="button" class="btn btn-outline-primary form-control col-lg-2">Register</button>
+              </div>
             </div>
           </div>
-        </div>
-    </nav>
+        </nav>
+      </div>
+    </section>
+    
 
     <section id="banner">
         <div id="container">
@@ -117,7 +122,6 @@
           <div class="col">
             <div class="card">
               <h3 class="title"><i class='bx bxs-plane-alt'></i> Cari Tiket Penerbanganmu</h3>
-
               <div class="row">
                 <div class="col radio-button">
                   <label id="radio-1" >
@@ -128,54 +132,54 @@
                   </label>
                 </div>
               </div>
-  
               <div class="row">
                 <div class="col">
-                  <table class="table">
-                    <tr>
-                      <td>Dari :</td>
-                      <td>Ke :</td>
-                      <td>Berangkat :</td>
-                      <td>Pulang :</td>
-                      <td>Penumpang & Kelas</td>
-                    </tr>
-                    <tr>
-                      <td>
-                        <select class="form-select"id="">
-                          <option value=""><i class='bx bxs-plane-take-off'></i>Sultan Mahmud Badarudin</option>
-                          <option value=""><i class='bx bxs-plane-take-off'></i>Seokarno Hatta</option>
-                          <option value=""><i class='bx bxs-plane-take-off'></i>Sultan iskandar Muda</option>
-                        </select>
-                        <i class='change bx bx-transfer-alt'></i>
-                      </td>
-                      <td>
-                        <select class="form-select" name="" id="">
-                          <option value="">Seokarno Hatta</option>
-                          <option value="">Sultan iskandar Muda</option>
-                          <option value="">Halim Perdanakusuma</option>
-                        </select>
-                      </td>
-                      <td>
-                        <input class="form-control" type="date" name="" id="">
-                      </td>
-                      <td>
-                        <input class="form-control" type="date" name="" id="" disabled>
-                      </td>
-                      <td>
-                        <select name="" id="" class=" form-control">
-                          <option value="">1 Penumpang, Bisnis</option>
-                          <option value="">2 Penumpang, Bisnis</option>
-                          <option value="">3 Penumpang, Bisnis</option>
-                        </select>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td colspan="5">
-                        <button class="btn btn-primary float-end">Cari <i class='bx bx-search-alt-2'></i></buttonc>
-                      </td>
-                    </tr>
-                  </table>
+                  <div class="input-group mb-3">
+                    <div class="form-floating">
+                      <select class="form-select" id="floatingDari">
+                        <option value="">Nama Bandra 1</option>
+                        <option value="">Nama Bandra 2</option>
+                        <option value="">Nama Bandra 3</option>
+                      </select>
+                      <label for="floatingDari">Dari :</label>
+                    </div>
+                    <span class="change input-group-text bg-transparent"><i class='bx bx-transfer-alt'></i></span>
+                    <div class="form-floating">
+                      <select class="form-select" id="floatingTujuan">
+                        <option value="">Nama Bandra 1</option>
+                        <option value="">Nama Bandra 2</option>
+                        <option value="">Nama Bandra 3</option>
+                      </select>
+                      <label for="floatingTujuan">Tujuan :</label>
+                    </div>
+                  </div>
                 </div>
+              </div>
+
+              <div class="row">
+                <div class="col">
+                  <div class="input-group mb-3">
+                    <div class="form-floating">
+                      <input type="date" class="form-control" id="floatingBerangkat">
+                      <label for="floatingBerangkat">Berangkat :</label>
+                    </div>
+                    <div class="form-floating">
+                      <input type="date" class="form-control" id="floatingPulang">
+                      <label for="floatingPulang">Pulang :</label>
+                    </div>
+                    <div class="form-floating">
+                      <select class="form-select" id="floatingTujuan">
+                        <option value="">1 Penumpang, Bisnis</option>
+                        <option value="">2 Penumpang, Bisnis</option>
+                        <option value="">1 Penumpang, Eksekutif</option>
+                      </select>
+                      <label for="floatingTujuan">Penumpang & Kelas :</label>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div>
+                <button class="btn btn-primary float-end">Cari <i class='bx bx-search-alt-2'></i></buttonc>
               </div>
             </div>
           </div>
@@ -192,19 +196,19 @@
 
             <div class="card">
               <div class="row">
-                <div class="col-6 col-sm-3">
+                <div class="icon col-3 col-sm-3">
                   <img src="./asset/notification.png" class="img-ekslusif" alt="">
                     <p class="card-text">Notifikasi promo dan event terbaru</p>
                 </div>
-                <div class="col-6 col-sm-3">
+                <div class="icon col-3 col-sm-3">
                   <img src="./asset/promo.png" class="img-ekslusif" alt="">
                   <p class="card-text">Promo dan diskon eksklusif</p>
                 </div>
-                <div class="col-6 col-sm-3">
+                <div class="icon col-3 col-sm-3">
                   <img src="./asset/payment.png" class="img-ekslusif" alt="">
                   <p class="card-text">Kemudahan pembayaran</p>
                 </div>
-                <div class="col-6 col-sm-3">
+                <div class="icon col-3 col-sm-3">
                   <img src="./asset/poin.png" class="img-ekslusif" alt="">
                   <p class="card-text">Kumpulkan poin dari setiap transaksi</p>
                 </div>
@@ -217,8 +221,8 @@
       <div class="container">
         <div class="row">
           <div class="title-header position-relative">
-            <div class="text-black"><h4>Temukan Tempat Menginap Di Kota Pilihanmu</h4></div>
-            <div class="position-absolute top-0 end-0"><a href="#"> selengkapnya >>></a></div>
+            <div class="text-black"><h4>Menginap Di Kota Pilihanmu</h4></div>
+            <div class="position-absolute top-0 end-0"><a href="#"> Lihat Semua</a></div>
           </div>
           <div class="row">
             <div class="swiper swiperKota">
@@ -275,7 +279,7 @@
         <div class="row">
           <div class="position-relative">
             <div class="title-header"><h4>Pilihan Hiburan Favorit</h4></div>
-            <div class="position-absolute top-0 end-0"><a href="#">selengkapnya >>></a></div>
+            <div class="position-absolute top-0 end-0"><a href="#">Lihat Semua</a></div>
           </div>
           <div class="row">
             <div class="swiper swiperHiburan">
@@ -376,7 +380,7 @@
         <div class="row">
           <div class="position-relative">
             <div class="title-header"><h4>Event Masyarakat Daerah</h4></div>
-            <div class="position-absolute top-0 end-0"><a href="#">selengkapnya >>></a></div>
+            <div class="position-absolute top-0 end-0"><a href="#">Lihat Semua</a></div>
           </div>
         </div>
           <div class="card">
@@ -387,10 +391,9 @@
               <div class="col-md-8">
                 <div class="card-body">
                   <h5 class="card-title">Catat! Event di Bali pada Bulan ini</h5>
-                  <br>
                   <p class="card-text">
                     Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quis nisi maiores totam quia laudantium ex sit facilis recusandae quisquam neque architecto, voluptatem repellat quasi. Ipsam repellendus magni reiciendis optio dolores.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. At, repudiandae aperiam aut delectus perspiciatis harum deserunt nihil rem cupiditate minus voluptatum a? Repellendus non, earum autem assumenda vero praesentium hic.
+                    repudiandae aperiam aut delectus perspiciatis harum deserunt nihil rem cupiditate minus voluptatum a? Repellendus non, earum autem assumenda vero praesentium hic.
                   </p>
                   <a href="#">Baca Selengkapnya ...</a>
                 </div>
@@ -403,38 +406,35 @@
     <section id="footer">
       <div class="container">
         <div class="row">
-            <div class="col">
               <img class="img-logo" src="./asset/explorer.png" alt=""><br>
-            </div>
-          </div>
-          <div class="row">
-            <div class="col-lg-3">
+        </div>
+        <div class="row">
+            <div class="col-5 col-sm-3 partner-pembayaran">
               <h5>Partner Pembayaran</h5>
               <br>
-              <div class="row g-5">
-                <div class="col-md-3">
+              <div class="row">
+                <div class="col">
                   <div class="card"><img class="img-pembayaran" src="./asset/bca.png" alt=""></div>
                   <div class="card"><img class="img-pembayaran" src="./asset/bri.png" alt=""></div>
                   <div class="card"><img class="img-pembayaran" src="./asset/master-card.png" alt=""></div>
                   <div class="card"><img class="img-pembayaran" src="./asset/ovo.png" alt=""></div>
                 </div>
-                <div class="col-md-3">
+                <div class="col">
                   <div class="card"><img class="img-pembayaran" src="./asset/mandiri.png" alt=""></div>
                   <div class="card"><img class="img-pembayaran" src="./asset/visa.png" alt=""></div>
                   <div class="card"><img class="img-pembayaran" src="./asset/indomaret.png" alt=""></div>
                   <div class="card"><img class="img-pembayaran" src="./asset/dana.png" alt=""></div>
                 </div>
-                <div class="col-md-3">
+                <div class="col">
                   <div class="card"><img class="img-pembayaran" src="./asset/bni.png" alt=""></div>
                   <div class="card"><img class="img-pembayaran" src="./asset/cimb.png" alt=""></div>
                   <div class="card"><img class="img-pembayaran" src="./asset/alfamart.png" alt=""></div>
                   <div class="card"><img class="img-pembayaran" src="./asset/GoPay.png" alt=""></div>
                 </div>
               </div>
-              
             </div>
 
-            <div class="col-lg-3 tentang-kami">
+            <div class="col-5 col-sm-3 tentang-kami">
               <h5>Tentang Kami</h5>
               <br>
               <a href="#">Tentang Kami</a>
@@ -448,7 +448,7 @@
               <a href="#">Perlindungan</a>
             </div>
 
-            <div class="col-lg-3 bantuan">
+            <div class="col-5 col-sm-3 bantuan">
               <h5>Bantuan</h5>
               <br>
               <a href="#">FAQ</a>
@@ -460,7 +460,7 @@
               <a href="#">Syarat & Ketentuan</a>
             </div>
 
-            <div class="col-lg-3 hubungi-kami">
+            <div class="col-5 col-sm-3 hubungi-kami">
               <h5>Hubungi Kami</h5>
               <br>
               <a href="#">
@@ -490,7 +490,7 @@
             </div>
           </div>
           <div class="row">
-            <div class="col">
+            <div class="col copyright">
               <p class="text-center">&copy; Copyright 2022, Explorer.com</p>
             </div>
           </div>
